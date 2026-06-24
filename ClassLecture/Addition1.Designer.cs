@@ -32,6 +32,10 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             label1 = new Label();
+            button2 = new Button();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -67,13 +71,50 @@
             label1.TabIndex = 2;
             label1.Text = "+";
             // 
+            // button2
+            // 
+            button2.Location = new Point(85, 108);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 0;
+            button2.Text = "計算";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button1_Click;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(12, 79);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 1;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(139, 79);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(100, 23);
+            textBox4.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(118, 82);
+            label2.Name = "label2";
+            label2.Size = new Size(12, 15);
+            label2.TabIndex = 3;
+            label2.Text = "-";
+            // 
             // Addition1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(254, 85);
+            ClientSize = new Size(254, 165);
+            Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
             Controls.Add(textBox2);
+            Controls.Add(button2);
             Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Addition1";
@@ -88,5 +129,9 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Label label1;
+        private Button button2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private Label label2;
     }
 }
