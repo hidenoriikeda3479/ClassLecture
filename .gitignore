@@ -1,0 +1,69 @@
+# ============================================================
+# Visual Studio / C# Windows Forms 用 .gitignore
+# コミット不要な自動生成・個人環境ファイルを除外
+# ============================================================
+
+# Visual Studio の個人設定
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ビルド結果
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# .NET の一時ファイル
+*.cache
+*.tmp
+*.log
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.pdb
+*.ilk
+*.idb
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+project.assets.json
+project.nuget.cache
+*.nuget.g.props
+*.nuget.g.targets
+
+# 発行ファイル
+publish/
+app.publish/
+*.Publish.xml
+*.pubxml.user
+
+# テスト結果
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Rider / VS Code など
+.idea/
+.vscode/
+*.DotSettings.user
+
+# OS が作成するファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 一時バックアップ
+*.bak
+*.orig
+*.rej
+~$*
